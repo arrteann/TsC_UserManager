@@ -28,6 +28,7 @@ body {
         'main'
         'footer'
     ;
+    grid-template-rows: 7rem auto 4rem;
 
 }
 
@@ -40,7 +41,7 @@ header {
     display: flex;
     align-items: center;
     font-size: .7rem;
-    padding: .5rem .9rem ;
+    padding: .5rem .9rem;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: white;
@@ -49,9 +50,71 @@ header {
 /* MAIN */
 main {
     grid-area: main;
+    padding: .4rem 1.4rem;
 }
 
+.form {
+    margin-top: .5rem;
+    padding: .4rem .2rem;
+}
 
+.input-box {
+    display: flex;
+    flex-direction: column;
+    margin: .6rem 0rem;
+}
+.input-box input{
+    margin: .4rem .5rem;
+    width: 19rem;
+    padding: .4rem .6rem;
+    border: none;
+    border-bottom: 1px solid var(--primary-dark);
+}
+button{
+    cursor: pointer;
+    padding: .5rem .9rem;
+    border: none;
+    background: transparent;
+    border: 1px dashed var(--primary-light);
+    transition: all .5s;
+}
+button:hover{
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+main .text {
+    padding-bottom: .5rem;
+    display: inline-block;
+    letter-spacing: 2px;
+    border-bottom:1px solid var(--text);
+}
+main .singup{
+    margin-bottom: 2rem;
+}
+/* MEMBER */
+.member {
+    margin: .9rem auto;
+    width: 99%;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid #323232;
+    
+}
+.member ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+.member ul li {
+    font-size:.95rem;
+    width: 100%;
+    margin: 0 .8rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    word-wrap: break-word;
+    overflow: hidden;
+}
 /* FOOTER */
 footer {
     grid-area: footer;
@@ -76,4 +139,13 @@ footer a {
 
 footer a:hover {
     border-bottom: 1px solid #fefef1;
+}
+
+
+/* OTHER */
+.line{
+    margin-top: 1.5rem;
+    width: 15rem;
+    height: 1px;
+    background-color: var(--primary-dark);
 }
